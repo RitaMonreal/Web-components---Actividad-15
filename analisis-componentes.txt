@@ -1,0 +1,80 @@
+Componentes:
+- Breadcrumbs: es una lista ordenada con items
+    Se compone de:
+        - Elementos de lista con enlaces
+        - Iconos de separeción entre enlaces
+        Sus estados son:
+            - Default
+            - Hover
+            - Select
+- Header
+    Se compone de:
+        - Dos divs (superior [gris] e inferior [azul])
+        Div superior:
+            Se compone de:
+                - Enlaces con Icons (Correo y directorio)
+        Div inferior:
+            Se compone de:
+                - Logos: universidad y facultad
+                - Enlaces: perfil del usuario (aspirante, estudiante, egresado, docente, administrativo)
+                    Sus estados son:
+                        - Default
+                        - Hover
+- Navbar
+    Se compone de:
+    - Enlaces simples
+        Sus estados son:
+            - Default
+            - Hover
+    - Enlaces tipo dropdown con icono
+        Se compone de:
+            - Titulo del dropdown con icono
+            - Item del dropdown
+            - conjunto de items del dropdown
+        Sus estados son:
+            - Default
+            - Hover
+        Sus estados de activación son:
+            - Abierto
+            - Cerrado
+    - Formulario de busqueda
+        Se compone de:
+            - Tabla
+                Se compone de:
+                    - Input 
+                        Se compone de y sus estados de activación son:
+                        - Input (mientras está sin escribir)
+                        - Input con botón de borrar cuando tiene algo escrito)
+                            Sus estados son:
+                                - Default
+                                - Hover
+                    - Botón con icono sin texto
+                Su funcionalidad es:
+                    - Realizar petición y hacer busqueda
+- Div de eventos generales
+    Se compone de:
+        - Row de cards
+            Se compone de: 
+            - Card completa
+                - Link de redireccionamiento (no visible)
+                - Imagen ilustartiva del card
+                - Cuerpo de texto del card
+                    - span de fecha
+                    - Titulo del card 
+        - Botón de conocer más
+            Sus estados son:
+                - Default
+                - Selected
+- Footer
+    Se compone de:
+    - Div izquierdo
+        Se compone de:
+            - Row de icons de social media
+            - Informacion de ubicación y de contacto
+    - Div derecho
+        Se compone de:
+            - Enlaces simples
+            Sus estados son:
+                - Default
+                - Hover
+
