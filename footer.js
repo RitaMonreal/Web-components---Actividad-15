@@ -4,8 +4,74 @@ class Footer extends HTMLElement{
         this.shadow = this.attachShadow({mode: 'open'});
     }
 
+    connectedCallback() {
+        this.render();
+
+        const link = document.createElement('link');
+        const link2 = document.createElement('link')
+        link.setAttribute('rel', 'stylesheet');
+        link.setAttribute('href', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+        link2.setAttribute('rel', 'stylesheet');
+        link2.setAttribute('href', 'styles.css');
+        this.shadow.appendChild(link);
+        this.shadow.appendChild(link2);
+    }
+
+
     render() {
         this.shadow.innerHTML = `
+        <style>
+            .contenedor-footer{
+                height: 290px;
+                width: 100vw;
+                background-color: antiquewhite;
+            }
+            .adorno-superior-footer{
+                height: 10px;
+                width: 100%;
+                background-color: #0DCAF0;
+            }
+            .informacion-footer{
+                height: 225px;
+                width: 100%;
+                background-color: #004A98;
+                color: white;
+                padding: 25px 50px 30px 50px;
+            }
+            .redes-sociales{
+                display: flex;
+                
+                height: 30px;
+                width: 855px;
+            }
+
+            .izquierdo-footer{
+                height: 210px;
+                width: 90%;
+                padding: 0px 15px;
+            }
+
+            .derecho-footer{
+                width: 240px;
+                height: 210px;
+                padding: 0px 15px;
+            }
+            span{
+                height: 27px;
+                width: 825px;
+                color: #FFFFFF;
+                padding: 0px 15px;
+                font-size: 18px;
+                
+            }
+            .container-general{
+                height: 210px;
+                width: 80%;
+                padding: 0px 15px;
+                margin: 0px 54.44px;
+                display: flex;
+            }
+        </style>
         <div class="contenedor-footer">
             <div class="adorno-superior-footer"></div>
             <div class="informacion-footer">
@@ -33,27 +99,13 @@ class Footer extends HTMLElement{
                         </div>
                     </div>
                     <div class="derecho-footer">
-                        <div class="contenedor-ancla">
-                            <a href="">Inicio</a>
-                        </div>
-                        <div class="contenedor-ancla">
-                            <a href="">Facultad</a>
-                        </div>
-                        <div class="contenedor-ancla">
-                            <a href="">Comunidad</a>
-                        </div>
-                        <div class="contenedor-ancla">
-                            <a href="">Oferta educativa</a>
-                        </div>
-                        <div class="contenedor-ancla">
-                            <a href="">Áreas</a>
-                        </div>
-                        <div class="contenedor-ancla">
-                            <a href="">Departamentos</a>
-                        </div>
-                        <div class="contenedor-ancla">
-                            <a href="">Investigación</a>
-                        </div>
+                        <mi-ancla texto="Inicio"></mi-ancla>
+                        <mi-ancla texto="Facultad"></mi-ancla>
+                        <mi-ancla texto="Comunidad"></mi-ancla>
+                        <mi-ancla texto="Oferta educativa"></mi-ancla>
+                        <mi-ancla texto="Áreas"></mi-ancla>
+                        <mi-ancla texto="Departamentos"></mi-ancla>
+                        <mi-ancla texto="Investigación"></mi-ancla>
                     </div>
                 </div>
             
