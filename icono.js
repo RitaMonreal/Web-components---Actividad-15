@@ -58,7 +58,7 @@ class Icono extends HTMLElement {
         <style>
             .contenedor-icono{
                 background-color: ${this.backgroundColor};
-                border-radius: ${this.borderRadius};
+                border-radius: ${this.borderRadius}px;
             }
         </style>
         <div class="contenedor-icono">
