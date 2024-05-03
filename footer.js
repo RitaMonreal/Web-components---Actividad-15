@@ -21,7 +21,7 @@ class Footer extends HTMLElement{
     render() {
         this.shadow.innerHTML = `
         <div class="contenedor-footer">
-            <div class="adorno-superior-footer"></div>
+            <div class="adorno-contenedor"></div>
             <div class="informacion-footer">
                 <div class="container-general">
                     <div class="izquierdo-footer">

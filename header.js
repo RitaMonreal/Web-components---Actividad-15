@@ -20,6 +20,46 @@ class Footer extends HTMLElement{
 
     render() {
         this.shadow.innerHTML = `
+        <div class="contenedor-header">
+        <div class="header-gris">
+            <div class="contenedor-informacion-contacto">
+                <div class="contenedor-flex">
+                    <div class="contenedor-info">
+                        <mi-icono icono="far fa-envelope" background-color="#706f6f" border-radius="50"></mi-icono>
+                        <span class="especificacion-icono">Correo</span>
+                    </div>
+                    <div class="contenedor-info">
+                        <mi-icono icono="fas fa-phone-alt" background-color="#706f6f" border-radius="50"></mi-icono>
+                        <span class="especificacion-icono">Directorio</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-azul">
+                <div class="contenedor-logos">
+                    <div class="logo-uaslp">
+
+                    </div>
+                    <span class="divider"></span>
+                    <div class="logo-ingenieria">
+
+                    </div>
+                </div>
+                <div class="contenedor-perfiles">
+                    <mi-ancla texto="Aspirantes"></mi-ancla>
+                    <span> | </span>
+                    <mi-ancla texto="Estudiantes"></mi-ancla>
+                    <span> | </span>
+                    <mi-ancla texto="Egresados"></mi-ancla>
+                    <span> | </span>
+                    <mi-ancla texto="Docentes"></mi-ancla>
+                    <span> | </span>
+                    <mi-ancla texto="Administrativos"></mi-ancla>
+                </div>
+        </div>
+    </div>
+    <div class="adorno-contenedor">
+    </div>
         
     `;
     }
