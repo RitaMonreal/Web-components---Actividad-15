@@ -16,6 +16,9 @@
     width: 30px;
     color: #FFFFFF;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Footer*/
@@ -35,7 +38,6 @@
 
 .redes-sociales{
     display: flex;
-    padding: 0px 15px;
     height: 30px;
     width: 855px;
 }
@@ -56,7 +58,7 @@ span{
     height: 27px;
     width: 825px;
     color: #FFFFFF;
-    padding: 0px 15px;
+    padding: 0px 5px;
     font-size: 18px;    
 }
 
@@ -79,6 +81,7 @@ span{
     width: auto;
     font-size: 20px;
     font-weight: 600;
+    padding: 5px;
 }
 
 .contenedor-ancla a:hover{
@@ -90,11 +93,11 @@ span{
     width: 100vw;
 }
 
-
 .header-gris{
     background-color: #D8D8D8;
     width: 100%;
     height: 51.521px;
+    
 }
 
 .contenedor-informacion-contacto{
@@ -105,15 +108,72 @@ span{
     margin: 0px 100px;
 }
 
-
 .contenedor-info{
     display: flex;
     width: 50%;
+    
 }
 
 .contenedor-flex{
     display: flex;
 }
+
 .especificacion-icono{
     margin: 0px 5px;
+}
+.contenedor-general-header{
+    height: 100%;
+    margin: 54px;
+    padding: 0px 15px;
+    display: flex;
+}
+
+.header-azul{
+    display: flex;
+    background-color: #004A98;
+    padding: 0px 15px;
+    height: 120px;
+}
+
+.contenedor-perfiles{
+    display: flex;
+    height: 120px;
+    width: 837px;
+    padding: 0px 15px;
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center;
+    margin-left: 100px;
+}
+
+.contenedor-logos{
+    height: 120px;
+    width: 422.021px;
+    padding: 0px 15px;
+    display: flex;
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center;
+    margin-left: 54px;
+}
+
+.logo{
+    width: 163px;
+    height: 64px;
+    background-position: center;
+    padding: 10px 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.divider {
+    height: 84px;
+    width: 0px;
+    margin: 0 25px;
+    border-right: 2px solid rgb(255, 255, 255);
+}
+
+.contenedor-perfiles span{
+    font-weight: 600;
+    color: white;
+    width: 0px;
+
 }

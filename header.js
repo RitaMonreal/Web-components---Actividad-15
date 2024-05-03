@@ -37,16 +37,12 @@ class Header extends HTMLElement{
         </div>
         <div class="header-azul">
                 <div class="contenedor-logos">
-                    <div class="logo-uaslp">
-
-                    </div>
+                    <mi-logo background-image="./assets/logo-uaslp.png"></mi-logo>
                     <span class="divider"></span>
-                    <div class="logo-ingenieria">
-
-                    </div>
+                    <mi-logo background-image="./assets/logo-ingenieria.png"></mi-logo>
                 </div>
                 <div class="contenedor-perfiles">
-                    <mi-ancla texto="Aspirantes"></mi-ancla>
+                <mi-ancla texto="Aspirantes"></mi-ancla>
                     <span> | </span>
                     <mi-ancla texto="Estudiantes"></mi-ancla>
                     <span> | </span>
@@ -60,7 +56,6 @@ class Header extends HTMLElement{
     </div>
     <div class="adorno-contenedor">
     </div>
-        
     `;
     }
 }
