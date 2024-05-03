@@ -20,58 +20,6 @@ class Footer extends HTMLElement{
 
     render() {
         this.shadow.innerHTML = `
-        <style>
-            .contenedor-footer{
-                height: 290px;
-                width: 100vw;
-                background-color: antiquewhite;
-            }
-            .adorno-superior-footer{
-                height: 10px;
-                width: 100%;
-                background-color: #0DCAF0;
-            }
-            .informacion-footer{
-                height: 225px;
-                width: 100%;
-                background-color: #004A98;
-                color: white;
-                padding: 25px 50px 30px 50px;
-            }
-            .redes-sociales{
-                display: flex;
-                
-                height: 30px;
-                width: 855px;
-            }
-
-            .izquierdo-footer{
-                height: 210px;
-                width: 90%;
-                padding: 0px 15px;
-            }
-
-            .derecho-footer{
-                width: 240px;
-                height: 210px;
-                padding: 0px 15px;
-            }
-            span{
-                height: 27px;
-                width: 825px;
-                color: #FFFFFF;
-                padding: 0px 15px;
-                font-size: 18px;
-                
-            }
-            .container-general{
-                height: 210px;
-                width: 80%;
-                padding: 0px 15px;
-                margin: 0px 54.44px;
-                display: flex;
-            }
-        </style>
         <div class="contenedor-footer">
             <div class="adorno-superior-footer"></div>
             <div class="informacion-footer">

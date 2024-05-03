@@ -3,10 +3,81 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/*Icono*/
 .contenedor-icono {
-    background-color: blue;
-    font-size: 30px;
+    font-size: 17.15px;
     height: 30px;
     width: 30px;
     color: #FFFFFF;
+    cursor: pointer;
+}
+
+/*Footer*/
+
+.contenedor-footer{
+    height: 290px;
+    width: 100vw;
+    background-color: antiquewhite;
+}
+.adorno-superior-footer{
+    height: 10px;
+    width: 100%;
+    background-color: #0DCAF0;
+}
+.informacion-footer{
+    height: 225px;
+    width: 100%;
+    background-color: #004A98;
+    color: white;
+    padding: 25px 50px 30px 50px;
+}
+.redes-sociales{
+    display: flex;
+    padding: 0px 15px;
+    height: 30px;
+    width: 855px;
+}
+
+.izquierdo-footer{
+    height: 210px;
+    width: 75%;
+    padding: 0px 15px;
+}
+
+.derecho-footer{
+    width: 240px;
+    height: 210px;
+    padding: 0px 15px;
+}
+span{
+    height: 27px;
+    width: 825px;
+    color: #FFFFFF;
+    padding: 0px 15px;
+    font-size: 18px;
+    
+}
+.container-general{
+    height: 210px;
+    width: 80%;
+    padding: 0px 15px;
+    margin: 0px 54.44px;
+    display: flex;
+}
+
+/*Ancla*/
+.contenedor-ancla{
+    height: 30px;
+}
+.contenedor-ancla a{
+    color: white;
+    text-decoration: none;
+    height: auto;
+    width: auto;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor-ancla a:hover{
+    text-decoration:underline;
 }

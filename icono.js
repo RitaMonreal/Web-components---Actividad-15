@@ -3,16 +3,39 @@ class Icono extends HTMLElement {
         super();
         this.shadow = this.attachShadow({mode: 'open'});
     }
+    /*icono: tipo de icono de font awesome*/
+    get icono(){
+        return this.getAttribute('icono');
+    }
+
+    set icono(val){
+        this.setAttribute('icono', val);
+    }
+
+    /*backgroundColor: color de fondo del contenedor*/
+    get backgroundColor(){
+        return this.getAttribute('background-color');
+    }
+
+    set backgroundColor(val){
+        this.setAttribute('background-color', val);
+    }
+
+    get borderRadius(){
+        return this.getAttribute('border-radius');
+    }
+
+    set borderRadius(val){
+        this.setAttribute('border-radius', val);
+    }
 
     
     static get observedAttributes() {
-        return ['icono'];
+        return ['icono', 'background-color', 'border-radius'];
     }
 
     attributeChangedCallback(name, oldValue, newValue) {
-        if (name === 'icono') {
-            this.render(newValue);
-        }
+        this.render();
     }
 
     connectedCallback() {
@@ -32,6 +55,12 @@ class Icono extends HTMLElement {
 
     render(icono) {
         this.shadow.innerHTML = `
+        <style>
+            .contenedor-icono{
+                background-color: ${this.backgroundColor};
+                border-radius: ${this.borderRadius};
+            }
+        </style>
         <div class="contenedor-icono">
             <i class="${icono}" id='icono'></i>
         </div>
