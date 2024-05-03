@@ -1,4 +1,4 @@
-class Footer extends HTMLElement{
+class Header extends HTMLElement{
     constructor(){
         super();
         this.shadow = this.attachShadow({mode: 'open'});
@@ -65,4 +65,4 @@ class Footer extends HTMLElement{
     }
 }
 
-customElements.define('mi-footer', Footer);
+customElements.define('mi-header', Header);
