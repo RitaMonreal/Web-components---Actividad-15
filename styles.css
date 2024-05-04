@@ -181,7 +181,7 @@ span{
 
 /*Card*/
 .contenedor-card{
-    width: 200px;
+    width: 245px;
     height: 315px;
     padding: 20px 15px;
     padding-bottom: 0px
@@ -189,14 +189,14 @@ span{
 
 .card-imagen{
     height: 200px;
-    width: 200px;
+    width: 245px;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .card-body{
     height: 75px;
-    width: 160px;
+    width: 205px;
     padding: 20px;
     background-color: #FFFFFF;
 }
