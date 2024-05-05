@@ -163,6 +163,7 @@ span{
     padding: 10px 15px;
     background-size: contain;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .divider {
@@ -184,7 +185,8 @@ span{
     width: 245px;
     height: 315px;
     padding: 20px 15px;
-    padding-bottom: 0px
+    padding-bottom: 0px;
+    cursor: pointer;
 }
 
 .card-imagen{
@@ -221,6 +223,16 @@ span{
     text-overflow: ellipsis; 
     white-space: nowrap;
 }
+
+.titulo-eventos{
+    text-align: center;
+    color: #004a98;
+}
+h2{
+    font-size: 45px;
+}
+
+/*Boton*/
 .boton-conocer-mas{
     height: 30px;
     width: 142px;
@@ -233,11 +245,9 @@ span{
     color: white;
     font-weight:600;
     font-size: 20px;
+    cursor: pointer;
 }
-.titulo-eventos{
-    text-align: center;
-    color: #004a98;
-}
-h2{
-    font-size: 45px;
+
+.boton-conocer-mas:active {
+    box-shadow: 0 0 15px #2080CB;
 }

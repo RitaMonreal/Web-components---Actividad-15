@@ -43,20 +43,7 @@ class Evento extends HTMLElement {
                 width: 100%;
                 display: flex;
             }
-            .boton-conocer-mas{
-                height: 30px;
-                width: 142px;
-                padding: 5px 20px;
-                border: 1.33px;
-                background-color: #2080CB;
-                margin-top: 20px;
-                margin-bottom: 20px;
-                border-radius: 20px;
-                color: white;
-                font-weight:600;
-                font-size: 20px;
-                
-            }
+            
  
         </style>
         <div class="contenedor-eventos">
@@ -70,9 +57,7 @@ class Evento extends HTMLElement {
                 <mi-card background-image="./assets/barbie.png" fecha-evento="08 abr." titulo-evento="Velada Estelar: Barbieland"></mi-card>
                 <mi-card background-image="./assets/barbie.png" fecha-evento="08 abr." titulo-evento="Velada Estelar: Barbieland"></mi-card>
                 </div>
-                <div class="boton-conocer-mas">
-                    Conocer más...
-                </div>
+               <mi-boton texto="Conocer más..."></mi-boton> 
             </div>
     </div>
         `;
