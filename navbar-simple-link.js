@@ -34,7 +34,7 @@ class NavbarLink extends HTMLElement {
 
 
     render() {
-        const texto = this.getAttribute('texto') || 'Ancla';
+        const texto = this.getAttribute('texto') || 'Texto predeterminado';
         this.shadow.innerHTML = `
         <style>
             .contenedor-option-simple{
