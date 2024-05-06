@@ -1,0 +1,201 @@
+/*Icono*/
+.contenedor-icono {
+    font-size: 17.15px;
+    height: 30px;
+    width: 30px;
+    color: var(--secondary-color);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Ancla*/
+.contenedor-ancla{
+    height: 30px;
+}
+.contenedor-ancla a{
+    color: var(--secondary-color);
+    text-decoration: none;
+    height: auto;
+    width: auto;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.contenedor-ancla a:hover{
+    text-decoration:underline;
+}
+
+/*Dropdown - Items*/
+
+.contenedor-item-dropdown{
+    padding: 5px 20px;
+    height: 30px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.contenedor-item-dropdown:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+/*Dropdown - Head*/
+
+.contenedor-option-dropdown {
+    height: 50px;
+    margin-right: 10px;
+    background-color: var(--secondary-color);
+    color:  var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+
+
+
+
+.contenedor-option-dropdown:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.contenedor-option-dropdown a {
+    padding: 10px;
+    height: auto;
+    width: auto;
+    font-size: 20px;
+    font-weight:600;
+}
+
+.contenedor-items {
+    display: none; 
+    position: absolute; 
+    z-index: 1; 
+    background-color: var(--secondary-color);
+    border: 1px solid var(--detail-color);
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.contenedor-items.show {
+    display: block; 
+}
+
+/*Botón*/
+.boton-conocer-mas{
+    height: 30px;
+    width: 142px;
+    padding: 5px 20px;
+    border: 1.33px;
+    background-color:var(--button-color-primary);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    color: white;
+    font-weight:600;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.boton-conocer-mas:active {
+    box-shadow: 0 0 15px var(--button-color-primary);
+}
+
+
+/*Card*/
+.contenedor-card{
+    width: 245px;
+    height: 315px;
+    padding: 20px 15px;
+    padding-bottom: 0px;
+    cursor: pointer;
+}
+
+.card-imagen{
+    height: 200px;
+    width: 245px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-body{
+    height: 75px;
+    width: 205px;
+    padding: 20px;
+    background-color: var(--secondary-color);
+}
+
+.dia-evento{
+    height: 27px;
+    width: 160px;
+}
+
+.fondo-dia-evento{
+    background-color: var(--primary-color);
+    height: auto;
+    width: auto;
+    padding: 10px;
+    color: var(--secondary-color);
+}
+.titulo-evento{
+    margin-top: 10px;
+    height: 54px;
+    width: 160px;
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+
+}
+
+.titulo-eventos{
+    text-align: center;
+    color: var(--primary-color);
+}
+h2{
+    font-size: 45px;
+}
+
+/*Logo*/
+.logo{
+    width: 163px;
+    height: 64px;
+    background-position: center;
+    padding: 10px 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+/*Navbar-simple-link*/
+.contenedor-option-simple{
+    height: 50px;
+    margin-right: 10px;
+    background-color: var(--secondary-color);
+    color:  var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.contenedor-option-simple:hover{
+    background-color:var(--primary-color);
+    color: white;
+}
+
+.contenedor-option-simple a{
+    padding: 10px;
+    height: auto;
+    width: auto;
+    font-size: 20px;
+    font-weight:600;
+}

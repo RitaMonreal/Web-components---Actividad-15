@@ -8,16 +8,17 @@ class Header extends HTMLElement{
         this.render();
 
         const link = document.createElement('link');
-        const link2 = document.createElement('link');
+        const layout = document.createElement('link');
         const global = document.createElement('link');
         link.setAttribute('rel', 'stylesheet');
         link.setAttribute('href', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
-        link2.setAttribute('rel', 'stylesheet');
-        link2.setAttribute('href', 'styles.css');
+        layout.setAttribute('rel', 'stylesheet');
+        layout.setAttribute('href', './styles/layout.css');
         global.setAttribute('rel', 'stylesheet');
         global.setAttribute('href', './styles/global.css');
         this.shadow.appendChild(link);
-        this.shadow.appendChild(link2);
+        this.shadow.appendChild(layout);
+        this.shadow.appendChild(global);
     }
 
 

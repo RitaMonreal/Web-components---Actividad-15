@@ -7,17 +7,13 @@ class Evento extends HTMLElement {
     connectedCallback() {
         this.render();
 
-        const link = document.createElement('link');
-        const link2 = document.createElement('link')
-        const global = document.createElement('link')
-        link.setAttribute('rel', 'stylesheet');
-        link.setAttribute('href', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
-        link2.setAttribute('rel', 'stylesheet');
-        link2.setAttribute('href', 'styles.css');
-        global.setAttribute('rel', 'stylesheet');
+        const layout = document.createElement('link');
+        const global = document.createElement('link');
+        layout.setAttribute('rel', 'stylesheet');
+        layout.setAttribute('href', './styles/layout.css');
+        global.setAttribute('rel', '.stylesheet');
         global.setAttribute('href', './styles/global.css');
-        this.shadow.appendChild(link);
-        this.shadow.appendChild(link2);
+        this.shadow.appendChild(layout);
         this.shadow.appendChild(global);
     }
 
@@ -25,31 +21,6 @@ class Evento extends HTMLElement {
     render() {
         
         this.shadow.innerHTML = `
-        <style>
-            .contenedor-eventos{
-                height: 490px;
-                width: 100vw;
-            }
-            .titulo-eventos{
-                text-align: center;
-                color: #004a98;
-            }
-            h2{
-                font-size: 45px;
-            }
-            .contenedor-general-cards{
-                height: 420px;
-                width: 1100px;
-                background-color: #E6ECF2;
-            }
-            .contenedor-cards{
-                height: 335px;
-                width: 100%;
-                display: flex;
-            }
-            
- 
-        </style>
         <div class="contenedor-eventos">
             <div class="titulo-eventos">
                 <h2>EVENTOS</h2>

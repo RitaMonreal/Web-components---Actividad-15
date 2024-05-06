@@ -12,14 +12,14 @@ class NavbarLink extends HTMLElement {
     connectedCallback() {
         this.render();
 
-        const link = document.createElement('link');
-        const link2 = document.createElement('link')
-        link.setAttribute('rel', 'stylesheet');
-        link.setAttribute('href', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
-        link2.setAttribute('rel', 'stylesheet');
-        link2.setAttribute('href', 'styles.css');
-        this.shadow.appendChild(link);
-        this.shadow.appendChild(link2);
+        const component = document.createElement('link');
+        const global = document.createElement('link');
+        component.setAttribute('href', 'styles.css');
+        component.setAttribute('href', './styles/component.css');
+        global.setAttribute('href', 'styles.css');
+        global.setAttribute('href', './styles/global.css');
+        this.shadow.appendChild(component);
+        this.shadow.appendChild(global);
     }
 
     static get observedAttributes() {
@@ -36,31 +36,6 @@ class NavbarLink extends HTMLElement {
     render() {
         const texto = this.getAttribute('texto') || 'Texto predeterminado';
         this.shadow.innerHTML = `
-        <style>
-            .contenedor-option-simple{
-                height: 50px;
-                margin-right: 10px;
-                background-color: white;
-                color:  #004A98;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 5px;
-            }
-
-            .contenedor-option-simple:hover{
-                background-color: #004A98;
-                color: white;
-            }
-
-            .contenedor-option-simple a{
-                padding: 10px;
-                height: auto;
-                width: auto;
-                font-size: 20px;
-                font-weight:600;
-            }
-        </style>
         <div class="contenedor-option-simple">
             <a>${texto}</a>
         </div>
