@@ -1,22 +1,24 @@
-class NavbarLink extends HTMLElement {
+class Breadcrumb extends HTMLElement {
     constructor() {
         super();
         this.shadow = this.attachShadow({mode: 'open'});
     }
 
-
-    attributeChangedCallback(name, oldValue, newValue) {
-        this.render();
-    }
-
     connectedCallback() {
         this.render();
-        const component = document.createElement('link')
-        const global = document.createElement('link')
+
+        const link = document.createElement('link');
+        const component = document.createElement('link');
+        const global = document.createElement('link');
+
+        link.setAttribute('rel', 'stylesheet');
+        link.setAttribute('href', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
         component.setAttribute('rel', 'stylesheet');
         component.setAttribute('href', './styles/component.css');
         global.setAttribute('rel', 'stylesheet');
         global.setAttribute('href', './styles/global.css');
+
+        this.shadow.appendChild(link);
         this.shadow.appendChild(component);
         this.shadow.appendChild(global);
     }
@@ -33,13 +35,14 @@ class NavbarLink extends HTMLElement {
 
 
     render() {
-        const texto = this.getAttribute('texto') || 'Texto predeterminado';
+        const texto = this.getAttribute('texto');
         this.shadow.innerHTML = `
-        <div class="contenedor-option-simple">
-            <a>${texto}</a>
+        <div class="contenedor-breadcrumb">
+            <span>${texto}</span>
+            <i class="fas fa-angle-right"></i>
         </div>
         `;
     }
 }
 
-customElements.define('mi-navbar-link', NavbarLink);
+customElements.define('mi-breadcrumb', Breadcrumb);

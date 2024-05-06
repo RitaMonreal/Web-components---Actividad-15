@@ -30,7 +30,10 @@
 
 .especificacion-icono{
     margin: 0px 5px;
+    color: var(--icon-color-primary);
+    font-size: 18px;
 }
+
 .contenedor-general-header{
     height: 100%;
     margin: 54px;
@@ -90,12 +93,18 @@
     font-size: 20px;
     font-weight:600;
     color:  var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .navbar-container{
     height: 50px;
     margin: 0px 87px;
     padding: 0px 15px;
     display: flex;
+    width: 1320px;
+    justify-content: center;
+    align-items: center;
 }
 .navbar-options{
     height: 100%;
@@ -225,4 +234,14 @@ span{
     padding: 0px 15px;
     margin: 0px 54.44px;
     display: flex;
+}
+
+/*Breadcrumb container*/
+.contenedor-breadcrumbs{
+    flex-wrap: wrap;
+    display: inline-flex;
+    padding: 13.50px 15px;
+    height: 20px;
+    background-color: var(--detail-color);
+    margin-left:54px;
 }
