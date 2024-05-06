@@ -4,6 +4,12 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 .adorno-contenedor{
     height: 10px;
     width: 100%;
@@ -40,13 +46,20 @@
 .redes-sociales{
     display: flex;
     height: 30px;
-    width: 855px;
+    width: 120px;
+    float: left;
 }
 
 .izquierdo-footer{
     height: 210px;
     width: 75%;
     padding: 0px 15px;
+    float: left;
+}
+
+.izquierdo-footer span{
+    float: left;
+    
 }
 
 .derecho-footer{
@@ -61,6 +74,7 @@ span{
     color: #FFFFFF;
     padding: 0px 5px;
     font-size: 18px;    
+    float: left;
 }
 
 .container-general{
@@ -72,6 +86,7 @@ span{
 }
 
 /*Ancla*/
+
 .contenedor-ancla{
     height: 30px;
 }
@@ -139,7 +154,7 @@ span{
 .contenedor-perfiles{
     display: flex;
     height: 120px;
-    width: 837px;
+    width: 600px;
     padding: 0px 15px;
     justify-content: center; 
     align-items: center;
@@ -151,7 +166,7 @@ span{
     width: 422.021px;
     padding: 0px 15px;
     display: flex;
-    justify-content: center; /
+    justify-content: center; 
     align-items: center;
     margin-left: 54px;
 }
@@ -180,7 +195,9 @@ span{
 
 }
 
+
 /*Card*/
+
 .contenedor-card{
     width: 245px;
     height: 315px;
@@ -233,6 +250,7 @@ h2{
 }
 
 /*Boton*/
+
 .boton-conocer-mas{
     height: 30px;
     width: 142px;
@@ -250,4 +268,70 @@ h2{
 
 .boton-conocer-mas:active {
     box-shadow: 0 0 15px #2080CB;
+}
+
+/*Navbar*/
+.navbar{
+    background-color: #FFFFFF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 50px;
+    width: 100vw;
+    padding: 10px 0px;
+    font-size: 20px;
+    font-weight:600;
+    color:  #004A98;
+}
+.navbar-container{
+    height: 50px;
+    margin: 0px 87px;
+    padding: 0px 15px;
+    display: flex;
+}
+.navbar-options{
+    height: 100%;
+    width: 80%;
+    margin-right: 12.479px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-search{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario-horizontal {
+    display: flex;
+    align-items: center; 
+}
+
+.form-control {
+    padding: 5px 9px 4px 9px;
+    border: 2px solid #004A98; 
+    height: 24px;
+    width: 110.667px;
+    
+}
+
+.form-group{
+    padding-right: 12px;
+}
+
+.boton-buscar {
+    font-size: 13px;
+    height: 13px;
+    width: 13px;
+    padding: 9px 27px;
+    border: 1.333px;
+    background-color: #004A98;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

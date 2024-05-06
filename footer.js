@@ -31,6 +31,7 @@ class Footer extends HTMLElement{
                             <mi-icono icono="fab fa-youtube"></mi-icono>
                             <mi-icono icono="fab fa-instagram"></mi-icono>
                         </div>
+                        <br>
                         <div class="contenedor-informacion">
                             <span>FI</span>
                             <br>

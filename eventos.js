@@ -53,9 +53,9 @@ class Evento extends HTMLElement {
             <div class="contenedor-general-cards">
                 <div class="contenedor-cards">
                 <mi-card background-image="./assets/barbie.png" fecha-evento="08 abr." titulo-evento="Velada Estelar: Barbieland"></mi-card>
-                <mi-card background-image="./assets/barbie.png" fecha-evento="08 abr." titulo-evento="Velada Estelar: Barbieland"></mi-card>
-                <mi-card background-image="./assets/barbie.png" fecha-evento="08 abr." titulo-evento="Velada Estelar: Barbieland"></mi-card>
-                <mi-card background-image="./assets/barbie.png" fecha-evento="08 abr." titulo-evento="Velada Estelar: Barbieland"></mi-card>
+                <mi-card background-image="./assets/eclipse.png" fecha-evento="22 abr." titulo-evento="Eclipse Solar Parcial:"></mi-card>
+                <mi-card background-image="./assets/nasa.png" fecha-evento="15 abr." titulo-evento="Robotics and Autonomous Systems for Space"></mi-card>
+                <mi-card background-image="./assets/proyecto.png" fecha-evento="07 abr." titulo-evento="20a. Expo Proyecto Integrador"></mi-card>
                 </div>
                <mi-boton texto="Conocer más..."></mi-boton> 
             </div>

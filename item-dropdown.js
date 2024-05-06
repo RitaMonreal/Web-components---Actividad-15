@@ -44,6 +44,7 @@ class NavbarItemDropdown extends HTMLElement {
                 background-color: white;
                 display: flex;
                 align-items: center;
+                white-space: nowrap;
             }
 
             .contenedor-item-dropdown:hover{
